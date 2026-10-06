@@ -76,7 +76,7 @@ apkwebekskulhayfa/
 │   │   ├── daftarekskul.php    (Daftar seluruh ekstrakurikuler)
 │   │   ├── detilekskul.php     (Detail informasi ekskul tertentu)
 │   │   ├── daftarkonten.php    (Berita, galeri, & artikel kegiatan ekskul)
-│   │   ├── detilkonten.php     (Detail isi konten & kolom komentar)
+│   │   ├── detailkonten.php     (Detail isi konten & kolom komentar)
 │   │   ├── tentang.php         (Halaman profil sekolah/ekskul)
 │   │   ├── kontak.php          (Halaman kontak pengelola)
 │   │   └── daftarisi.php       (Peta situs / Sitemap)
@@ -96,6 +96,7 @@ apkwebekskulhayfa/
     ├── koneksi.php
     ├── session.php
     ├── prosesuser.php
+    ├── prosesdashboar.php
     ├── prosesekskul.php
     ├── proseskonten.php
     ├── proseskomentar.php
