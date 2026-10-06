@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "username": "hayfa",
+        "password": "hayfa",
+        "nama": "hayfa sakhiy",
+        "role": "admin",
+        "email": "hayfa@gmail.com",
+        "foto": "user_2_1789576638.png",
+        "tanggal_buat": "2026-09-16 16:17:02"
+    },
+    {
+        "id": 2,
+        "username": "admin",
+        "password": "admin",
+        "nama": "administrator",
+        "role": "admin",
+        "email": "hayfa@gmail.com",
+        "foto": "user_3_1789576099.jpg",
+        "tanggal_buat": "2026-09-16 16:28:19"
+    }
+]
+
