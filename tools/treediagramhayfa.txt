@@ -1,0 +1,103 @@
+apkwebekskulhayfa/
+│
+├── index.php                 # Halaman homepage selamat datang (menggunakan navbar tamu/public)
+│
+├── assets/
+│   ├── js/
+│   ├── css/
+│   ├── plugins/
+│   └── images/
+│       ├── slider/
+│       ├── ekskul/
+│       ├── konten/
+│       ├── pengunjung/
+│       └── user/
+│  
+├── views/
+│   │
+│   ├── component/ 
+│   │   ├── tamu/
+│   │   │   ├── navbar.php    => Navbar publik (Menu Home, Ekskul, Konten, Login User, Login Pengunjung)
+│   │   │   └── footer.php
+│   │   ├── user/
+│   │   │   ├── navbar.php    => Navbar internal (Foto, Role, Nama User, Logout)
+│   │   │   ├── sidebaradmin.php    => Admin (Akses seluruh fitur/menu)
+│   │   │   ├── sidebarpetugas.php  => Petugas/Pengelola (Akses terbatas, tanpa menu User)
+│   │   │   └── footer.php
+│   │   └── pengunjung/
+│   │       ├── navbar.php    => Navbar Pengunjung/Anggota Terdaftar (Foto, Profil, Logout)
+│   │       ├── sidebar.php
+│   │       └── footer.php
+│   │
+│   ├── user/   ← (ADMIN & PETUGAS / PENGELOLA)
+│   │   ├── dashboard/
+│   │   │   ├── dashboardadmin.php
+│   │   │   └── dashboardpetugas.php
+│   │   ├── user/
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── ekskul/
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── konten/
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── komentar/
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   ├── pengunjung/
+│   │   │   ├── index.php
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   └── show.php
+│   │   └── laporan/
+│   │       ├── laporanharian.php
+│   │       ├── cetaklaporanharian.php
+│   │       ├── laporanbulanan.php
+│   │       ├── cetaklaporanbulanan.php
+│   │       ├── laporantahunan.php
+│   │       └── cetaklaporantahunan.php
+│   │
+│   ├── pengunjung/   ← (LOGIN PENGUNJUNG / ANGGOTA EKSKUL)
+│   │   ├── dashboardpengunjung.php  (Dashboard dinamis, modern & responsif)
+│   │   ├── profil.php               (Profil lengkap data pengunjung)
+│   │   └── riwayataktivitas.php     (Riwayat komentar & keikutsertaan ekskul/kegiatan)
+│   │
+│   ├── landing/   ← (PUBLIC / TAMU)
+│   │   ├── home.php            (Halaman utama, ringkasan ekskul & berita/konten terbaru)
+│   │   ├── daftarekskul.php    (Daftar seluruh ekstrakurikuler)
+│   │   ├── detilekskul.php     (Detail informasi ekskul tertentu)
+│   │   ├── daftarkonten.php    (Berita, galeri, & artikel kegiatan ekskul)
+│   │   ├── detilkonten.php     (Detail isi konten & kolom komentar)
+│   │   ├── tentang.php         (Halaman profil sekolah/ekskul)
+│   │   ├── kontak.php          (Halaman kontak pengelola)
+│   │   └── daftarisi.php       (Peta situs / Sitemap)
+│   │
+│   ├── auth/   
+│   │   ├── logout.php
+│   │   ├── loginuser.php           (Login untuk Admin & Petugas/Pengelola)
+│   │   ├── loginpengunjung.php     (Login untuk Pengunjung/Anggota)
+│   │   └── registerpengunjung.php  (Pendaftaran Pengunjung baru)
+│   │
+│   └── errors/   ← (GLOBAL ERROR HANDLER)
+│       ├── 404.php
+│       ├── 403.php
+│       └── 500.php
+│
+└── proses/
+    ├── koneksi.php
+    ├── session.php
+    ├── prosesuser.php
+    ├── prosesekskul.php
+    ├── proseskonten.php
+    ├── proseskomentar.php
+    ├── prosespengunjung.php
+    └── proseslaporan.php
